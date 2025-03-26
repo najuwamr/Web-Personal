@@ -377,8 +377,7 @@ footer {
 /* dark mode */
 .dark-mode nav ,
 .dark-mode #pfp:hover ul,
-.dark-mode main,
-.dark-mode footer
+.dark-mode main
 {
     background-color: #3D0301;
     color: #EBE8DB;
