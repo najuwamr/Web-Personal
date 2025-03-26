@@ -1,4 +1,3 @@
-const block = document.querySelector(".block-wrapper");
 const button = document.getElementById("mode");
 const body = document.querySelector("body"); 
 const picture = document.getElementById("my-pics")

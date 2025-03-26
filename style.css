@@ -8,30 +8,83 @@ body{
     color: #3d0301;
 }
 
-/* --color-white{
-    background-color: white;
-} */
-
 section{
     margin: 0rem 4rem;
     scroll-margin-top: 80px;
+    text-align: center;
 }
 
-/* Nav */
+nav,
+#aboutme,
+.block
+{
+    box-shadow: 0px 4px 15px #dfa39c;
+}
+
+#pfp ul li, .find-me,
+#home, #col-hero1,
+#aboutme,.card-wrapper,
+div.card-container,
+.block-wrapper, .block-content,
+#contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pfp,
+.find-me a:hover img,
+#col-aboutme2:hover,
+.card:hover,
+.block:hover
+{
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+.block-wrapper,
+.card-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.find-me img,
+#aboutme .abt-col,
+.card,
+.block
+{
+    transition: transform 0.3s ease;
+}
+
+.card img,
+.block-content img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card, 
+.block
+{
+    background: #fcf6f6;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
 nav{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     background-color: #dfa39c;
-    box-shadow: 0px 4px 20px #dfa39c;
 }
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style-type: none;
     margin: 0;
-    align-items: center;
     gap: 32px;
     padding: 8px 32px;
     justify-content: end;
@@ -69,18 +122,11 @@ nav ul li a:hover{
     text-align: center;
 }
 
-#pfp ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .profile-name {
     flex-direction: column;
     font-size: 18px;
     padding: 1rem 0rem;
     line-height: 1;
-    color: #3D0301;
 }
 
 .profile-name .email {
@@ -89,23 +135,15 @@ nav ul li a:hover{
 }
 
 .find-me {
-    display: flex;
     flex-direction: row;
-    justify-content: center; 
     gap: 10px; 
     margin-top: 8px;
     list-style: none; 
 }
 
-
 .find-me img {
     width: 32px; 
     height: auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-.find-me a:hover img {
-    transform: scale(1.2); 
 }
 
 #mode{
@@ -119,33 +157,22 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-/* Section 1 */
+
 #home {
     margin-top: 4rem;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
     height: 100vh;
-    /* gap: 2rem; */
 }
 
 #home .col{
     width: 50%;
 }
 
-#col-hero1 {
-    display: flex;
-    justify-content: center;
-}
-
 #col-hero1 img {
     display: block;
     margin: auto;
-    /* animation: floating 4s ease-in-out infinite; */
 }
 
 .row-1 {
-    color: #3d0301d8;
     font-size: 18px;
     margin-bottom: 35px;
 }
@@ -155,47 +182,35 @@ nav ul li a:hover{
     text-align: right;
 }
 
-
-/* Section 2 */
 #aboutme {
     margin: 3rem;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
     flex-wrap: wrap;
     padding: 30px; 
-    border-radius: 50px; 
-    background-color: #dfa39c; 
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background-color: #dfa39c;
 }
 
 #aboutme .abt-col{
     flex: 1;
-    transition: transform 0.3s ease;
 }
 
 .abt-col .abtrow-1{
     font-size: 20pt;
+    text-align: justify;
 }
 .abt-col .abtrow-2{
     font-size: 16pt;
+    text-align: justify;
 }
 
 #col-aboutme2 img {
     display: block;
     margin: auto;
     width: 100%;
-    /* animation: floating 4s ease-in-out infinite; */
-}
-
-#col-aboutme2:hover{
-    transform: scale(1.05);
-    cursor: pointer;
 }
 
 .interest{
     width: 100%;
-    text-align: center;
     margin-top: 20px;
 }
 
@@ -205,39 +220,20 @@ nav ul li a:hover{
     border-top: 5px solid #f1dbdb;
 }
 
-.card-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin: 3rem auto;
-    align-items:center ;
-}
-
 div.card-container{
-    display: flex;
-    justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
 }
 
 .card{
-    background: #EBE8DB;
-    border-radius: 10px;
     padding: 15px;
     width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease;
 }
 
-.card:hover{
-    transform: scale(1.05);
-}
 
 .card img{
     width: 100%;
     height: 150px;
-    object-fit: fill;
-    border-radius: 10px;
 }
 
 .card p,li{
@@ -245,74 +241,40 @@ div.card-container{
     font-size: small;
 }
 
-/* Section 3: Portfolios */
-/* Wrapper utama untuk blok */
 #mywork {
     box-sizing: border-box;
 }
 
-/* Judul utama */
 #mywork h1 {
-    text-align: center;
     margin-bottom: 2rem;
     padding: 1rem;
     font-size: 26px;
     border-bottom: 5px solid #e1848b;
 }
 
-/* Wrapper untuk semua blok */
-.block-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
 .block-wrapper h3{
     width: 10rem;
-    /* background-color: #007bff; */
-    text-align: center;
     border-bottom: 2px solid #e1848b;
     padding-bottom: 0.5rem;
 }
 
-/* Blok utama */
 .block {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
-    padding: 20px;
     width: 100%;
     max-width: 800px;
-    transition: transform 0.3s ease;
-}
-
-/* Judul di dalam blok */
-
-.block:hover{
-    transform: scale(1.05);
 }
 
 .block h2 {
-    text-align: center;
     margin-bottom: 15px;
 }
 
-/* Konten dalam blok */
 .block-content {
-    display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 
-/* Gambar */
 .block-content img {
     width: 40%;
     max-height: 200px;
-    border-radius: 8px;
-    object-fit: cover;
 }
 
 .text-content {
@@ -321,7 +283,6 @@ div.card-container{
     line-height: 1.6;
 }
 
-/* Link baca selengkapnya */
 .baca-selengkapnya {
     text-align: right;
 }
@@ -336,21 +297,16 @@ div.card-container{
     text-decoration: underline;
 }
 
-
-/* Section 4 */
 #contact{
-    display: flex;
     flex-direction: column;
     border: 5px solid #e1848b;
     border-radius: 15px;
     margin: 4rem;
-    align-items: center;
     padding: 3rem;
 }
 
 .contact p {
     font-size: 16px;
-    color: #3d0301d8;
     margin-bottom: 20px;
 }
 
@@ -362,17 +318,15 @@ div.card-container{
 .contact label {
     text-align: left;
     font-weight: bold;
-    color: #3d0301d8;
 }
 
 .contact input,
 .contact select,
 .contact textarea {
     width: 100%;
-    max-width: 100rem; 
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccca4;
     border-radius: 5px;
     box-sizing: border-box;
     margin: 0 auto; 
@@ -397,7 +351,6 @@ div.card-container{
     background-color: #380403;
 }
 
-/* Footer */
 footer {
     bottom: 0;
     width: 100%;
@@ -405,12 +358,10 @@ footer {
     text-align: center;
 }
 
-/* Screen size */
 @media screen and (max-width: 768px) { 
     section {
         flex-direction: column; 
-        align-items: center;
-        text-align: center; 
+        align-items: center; 
     }
 
     #home .col {
@@ -424,12 +375,13 @@ footer {
 }
 
 /* dark mode */
-
 .dark-mode nav ,
 .dark-mode #pfp:hover ul,
-.dark-mode main
+.dark-mode main,
+.dark-mode footer
 {
     background-color: #3D0301;
+    color: #EBE8DB;
 }
 
 .dark-mode nav ul li a:hover{
@@ -449,4 +401,16 @@ footer {
 
 .dark-mode #mode{
     border: 2px solid #EBE8DB;
+}
+
+.dark-mode #aboutme,
+.dark-mode .card,
+.dark-mode .block
+{
+    background-color: #ffffff21;
+}
+
+.dark-mode .contact button{
+    background-color: #EBE8DB;
+    color: #380403;
 }
