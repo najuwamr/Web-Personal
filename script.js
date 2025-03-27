@@ -2,7 +2,6 @@ const button = document.getElementById("mode");
 const body = document.querySelector("body"); 
 const picture = document.getElementById("my-pics")
 
-
 console.log(button, body);
 
 button.addEventListener("click", function() {
