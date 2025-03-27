@@ -13,7 +13,7 @@ Deployment: Vercel
 3. Halaman Beranda: bagian ini berisi tampilan awal dari website.
 4. Halaman Tentang Saya: bagian ini berisi informasi tentang diri saya, termasuk minat dan bakat.
 5. Halaman Portofolio: bagian ini berisi karya-karya yang sudah saya publikasikan di akun medium, dan juga proyek-proyek mendatang.
-6. Contact Me: bagian ini berisi formulir untuk mengirimkan pesan.
+6. Contact Me: bagian ini berisi formulir untuk mengirimkan pesan(front-end).
 
 ## Akses Website
 
